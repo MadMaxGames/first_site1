@@ -22,15 +22,19 @@ html, body{
     max-width: 950px;
   }
   .begin__body{
-    width: 100%;
+    // width: 100%;
  }
  .begin__row{
-   justify-content: center;
+  //  justify-content: center;
   margin: 5px; }
 }
 @media (max-width: 1026px){
   .container{
     max-width: 1000px;
+  }
+  .begin__row{
+    max-width: 470px;
+    margin: 0 auto;
   }
   .info__row{
     flex-wrap: wrap;
@@ -63,7 +67,9 @@ html, body{
   max-width: 100%;
 }
 .begin {
-  min-width: 1280px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
     &__body {
 
   }
@@ -90,9 +96,21 @@ html, body{
   }
 
   &__img {
-    width: 469px;
-    height: 214px;
+    max-width: 469px;
+    max-height: 214px;
     flex: 0 0 auto;
+  }
+}
+
+@media (max-width:500px) {
+  .img {
+    width: 350px;
+  }
+}
+
+@media (max-width:376px) {
+  .img {
+    width: 310px;
   }
 }
 
